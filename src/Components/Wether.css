@@ -1,0 +1,77 @@
+.weatherData__div {
+  color: white;
+  font-size: larger;
+  position: relative;
+  height: 235px;
+  max-width: 900px;
+  overflow: hidden;
+  margin-inline: auto;
+}
+.weatherData__div h2 {
+  position: relative;
+  bottom: 2rem;
+  color: white;
+  font-size: clamp(55px, 10vw, 70px);
+}
+.weatherData__country {
+  position: relative;
+  bottom: 4rem;
+  color: white;
+}
+.weatherData__subText {
+  position: absolute;
+  right: 0;
+  top: 43%;
+  transform: translate(-50%);
+  transform: rotate(270deg);
+  font-size: clamp(15px, 7vw, 25px);
+}
+
+.weatherData__buttom_section {
+  max-width: 1200px;
+  border-radius: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.308);
+  color: white;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  overflow: hidden;
+}
+.weatherData__buttom_section div {
+  text-align: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.weatherData_bottom_section_info {
+  position: relative;
+  top: 10px;
+}
+
+.weatherData_bottom_section_text {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .weatherData__buttom_section {
+    justify-content: space-around;
+    font-weight: bold;
+  }
+}
+@media (max-width: 900px) {
+  .weatherData__subText {
+    top: 42%;
+  }
+}
+@media (max-width: 500px) {
+  .weatherData__subText {
+    top: 38%;
+  }
+}
